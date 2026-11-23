@@ -108,6 +108,27 @@ h2.display{font-size:clamp(2.3rem,4.6vw,3.6rem);margin:0 0 14px}
 .side-img img{width:100%;aspect-ratio:1000/952;object-fit:cover}
 .portfolio{margin-top:18px;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:16px 18px;font-size:.95rem}
 
+.pgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.pcard{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:26px}
+.pcard.wide{grid-column:1/-1}
+.ptop{display:flex;justify-content:space-between;align-items:center}
+.pcard h3{margin:14px 0 8px;font-size:1.15rem}
+.inc{margin:0;padding:0;list-style:none}
+.inc li{position:relative;padding:5px 0 5px 26px;font-size:.96rem;color:#4b443d}
+.inc li:before{content:"";position:absolute;left:2px;top:12px;width:12px;height:7px;border-left:2px solid var(--rust);border-bottom:2px solid var(--rust);transform:rotate(-45deg)}
+.pnote{margin:12px 0 0;padding-top:12px;border-top:1px dashed var(--line);font-size:.86rem;color:var(--muted)}
+.work-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+.browser{display:block;text-decoration:none;color:var(--ink);background:var(--white);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 24px 50px -24px rgba(80,50,25,.35);transition:.2s}
+.browser:hover{transform:translateY(-3px)}
+.bbar{display:flex;align-items:center;gap:7px;padding:12px 16px;background:var(--cream2);border-bottom:1px solid var(--line)}
+.bbar span{width:11px;height:11px;border-radius:50%;background:#d9c9b7}
+.bbar em{font-style:normal;font-size:.85rem;color:var(--muted);margin-left:10px;background:var(--white);padding:4px 12px;border-radius:999px;flex:1}
+.browser img{width:100%;height:auto}
+.wtext h3{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;font-size:2rem;margin:0 0 8px;line-height:1}
+.wtext .btn{margin-top:18px}
+.cap{font-size:.8rem;color:var(--muted);text-align:center;margin:8px 0 0}
+.mbar{display:none}
+
 /* steps */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
 .step{position:relative;padding:28px 22px 22px;background:var(--white);border:1px solid var(--line);border-radius:20px}
@@ -148,11 +169,17 @@ footer .tag{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-trans
  .steps{grid-template-columns:1fr 1fr;row-gap:34px}
  nav a:not(.navcta){display:none}
  .side-img{max-width:520px}
+ .work-grid{grid-template-columns:1fr}
 }
 @media(max-width:600px){
  body{font-size:16px}
  section{padding:58px 0}
- .grid3,.steps{grid-template-columns:1fr}
+ .grid3,.steps,.pgrid{grid-template-columns:1fr}
+ .mbar{display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,253,249,.97);border-top:1px solid var(--line);box-shadow:0 -6px 20px rgba(60,40,20,.08)}
+ .mbar a{display:flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;font-weight:700;font-size:.95rem;border-radius:999px;padding:11px 6px;border:2px solid var(--rust);color:var(--rust)}
+ .mbar a.q{background:var(--rust);color:#fff}
+ .mbar svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+ body{padding-bottom:72px}
  form{grid-template-columns:1fr;padding:22px}
  .plist{padding:4px 18px}
  .prow{grid-template-columns:44px 1fr;gap:12px}
@@ -186,6 +213,7 @@ footer .tag{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-trans
  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6.5a3 3 0 016 0V8"/></symbol>
  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a1.5 1.5 0 01-1.6 1.5A16.5 16.5 0 013.5 5.6 1.5 1.5 0 015 4z"/></symbol>
  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></symbol>
+ <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6-6.5-11A6.5 6.5 0 0112 3.5 6.5 6.5 0 0118.5 10c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></symbol>
 </svg>
 
@@ -195,7 +223,7 @@ footer .tag{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-trans
       <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22.5" fill="none" stroke="#b8582d" stroke-width="1.6"/><g transform="translate(4 4)" fill="none" stroke="#b8582d" stroke-width="1.6" stroke-linecap="round"><use href="#i-sprig" width="40" height="40"/></g></svg>
       <span><b>Creator Independence</b><small>Your Business. Your Creativity. Your Future.</small></span>
     </a>
-    <nav><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#how">How it works</a><a class="navcta" href="#contact">Free quote</a></nav>
+    <nav><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#work">Our work</a><a href="#how">How it works</a><a class="navcta" href="#contact">Free quote</a></nav>
   </div>
 </header>
 
@@ -211,7 +239,7 @@ footer .tag{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-trans
         <a class="btn primary" href="#contact">Request a free quote</a>
         <a class="btn secondary" href="#pricing">See prices</a>
       </div>
-      <p class="trust">Central New Jersey in person &amp; clients anywhere remotely · Call or text <a href="tel:+19083910362">908-391-0362</a></p>
+      <p class="trust">Central New Jersey in person &amp; clients anywhere remotely · <a href="tel:+19083910362">Call</a> or <a href="sms:+19083910362">text</a> 908-391-0362</p>
     </div>
     <div class="hero-img"><img src="images/hero-booth.jpg" width="1800" height="1184" alt="Handmade ceramics, jewelry, and a woven wall hanging at a market booth beside a phone showing an online gallery of the same products" fetchpriority="high"></div>
   </div>
@@ -256,20 +284,46 @@ footer .tag{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-trans
       <h2 class="display">Simple ways to grow your online presence</h2>
       <p class="sub">Straightforward starting prices. Your written quote is agreed before any work begins.</p>
     </div>
-    <div class="price-wrap">
-      <div>
-        <div class="plist">
-          <div class="prow"><span class="ic o"><svg><use href="#i-card"/></svg></span><div><h3>Digital business card / landing page</h3><p>One clean page with your links — perfect with a booth QR code.</p></div><div class="pr"><small>Starting at</small><b>$149</b></div></div>
-          <div class="prow"><span class="ic o"><svg><use href="#i-site"/></svg></span><div><h3>Starter business website</h3><p>Explains your business, shows your work, easy to contact.</p></div><div class="pr"><small>Starting at</small><b>$299</b></div></div>
-          <div class="prow"><span class="ic o"><svg><use href="#i-art"/></svg></span><div><h3>Artist portfolio website</h3><p>A gallery-focused site for your art or products.</p></div><div class="pr"><small>Starting at</small><b>$399</b></div></div>
-          <div class="prow"><span class="ic o"><svg><use href="#i-cart"/></svg></span><div><h3>Online storefront</h3><p>Product pages and checkout so customers can buy anytime.</p></div><div class="pr"><small>Starting at</small><b>$599</b></div></div>
-          <div class="prow"><span class="ic o"><svg><use href="#i-gear"/></svg></span><div><h3>Website maintenance</h3><p>Updates, product changes, and regular checkups.</p></div><div class="pr"><small>From</small><b>$39</b><i>/month</i></div></div>
-        </div>
-        <p class="fine">Introductory prices are estimates; your final quote depends on scope and is agreed in writing before work begins. Domain, hosting, payment processing, and other third-party fees are separate and paid directly to those providers, so the accounts stay in your name.</p>
-      </div>
-      <div>
-        <div class="side-img"><img src="images/handmade-studio.jpg" width="1000" height="952" alt="Pottery, twine, and paintbrushes beside a phone showing a Handmade with Heart website" loading="lazy"></div>
-        <div class="portfolio"><strong>See my work:</strong> <a href="https://gearclaritytech.com" target="_blank" rel="noopener">gearclaritytech.com</a>, an independent tech-education website built and run by founder Donavon Vicars.</div>
+    <div class="pgrid">
+      <div class="pcard"><div class="ptop"><span class="ic o"><svg><use href="#i-card"/></svg></span><div class="pr"><small>Starting at</small><b>$149</b></div></div>
+        <h3>Digital business card / landing page</h3>
+        <ul class="inc"><li>1 page with your photo, short bio, and what you offer</li><li>Links to your shop and social pages</li><li>Tap-to-call, text, and email buttons</li><li>Digital QR code file for your booth (printing not included)</li><li>1 round of changes</li></ul></div>
+      <div class="pcard"><div class="ptop"><span class="ic o"><svg><use href="#i-site"/></svg></span><div class="pr"><small>Starting at</small><b>$299</b></div></div>
+        <h3>Starter business website</h3>
+        <ul class="inc"><li>Up to 4 pages (Home, About, Work, Contact)</li><li>Mobile-friendly design with a contact form</li><li>Basic search engine (SEO) setup; no ranking guarantees</li><li>2 rounds of changes</li></ul></div>
+      <div class="pcard"><div class="ptop"><span class="ic o"><svg><use href="#i-art"/></svg></span><div class="pr"><small>Starting at</small><b>$399</b></div></div>
+        <h3>Artist portfolio website</h3>
+        <ul class="inc"><li>Up to 5 pages</li><li>Gallery of up to 30 images</li><li>Artist statement and commission/inquiry form</li><li>You supply the photos, artwork descriptions, and bio text</li><li>2 rounds of changes</li></ul></div>
+      <div class="pcard"><div class="ptop"><span class="ic o"><svg><use href="#i-cart"/></svg></span><div class="pr"><small>Starting at</small><b>$599</b></div></div>
+        <h3>Online storefront</h3>
+        <ul class="inc"><li>Shop set up on a platform in your name (Shopify, Square, etc.; their fees are separate)</li><li>Up to 20 products added</li><li>Payment, shipping, and tax settings set up for your review and approval</li><li>Policy pages using the terms you provide</li><li>Walkthrough on adding products yourself</li></ul></div>
+      <div class="pcard wide"><div class="ptop"><span class="ic o"><svg><use href="#i-gear"/></svg></span><div class="pr"><small>From</small><b>$39</b><i>/month</i></div></div>
+        <h3>Website maintenance</h3>
+        <ul class="inc"><li>Up to 30 minutes of minor content updates each month (text, photos, products, prices)</li><li>Monthly check of links and your contact form</li><li>Requests acknowledged within 2 business days</li><li>No contract; cancel anytime, effective at the end of your current paid billing period</li></ul>
+        <p class="pnote">Unused time does not roll over. Additional work is quoted separately. Not included: major redesigns, new pages, hosting, domain fees, and third-party subscriptions.</p></div>
+    </div>
+    <p class="fine center">Introductory prices are estimates; your final quote depends on scope and is agreed in writing before work begins. Domain, hosting, payment processing, and other third-party fees are separate and paid directly to those providers, so the accounts stay in your name.</p>
+  </div>
+</section>
+
+<section id="work" class="work">
+  <div class="wrap">
+    <div class="center">
+      <div class="orn"><svg viewBox="0 0 40 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 10h32M20 10c-3-3-7-4-10-3 2 3 6 4 10 3zm0 0c3-3 7-4 10-3-2 3-6 4-10 3z"/></svg></div>
+      <h2 class="display">See a working website</h2>
+      <p class="sub">Visit a live site built and run by founder Donavon Vicars.</p>
+    </div>
+    <div class="work-grid">
+      <a class="browser" href="https://gearclaritytech.com" target="_blank" rel="noopener" aria-label="Visit gearclaritytech.com (opens in a new tab)">
+        <div class="bbar"><span></span><span></span><span></span><em>gearclaritytech.com</em></div>
+        <img src="images/gearclaritytech-home.webp" width="1000" height="600" alt="Screenshot of the GearClarity Tech homepage: Know what you need before you buy it" loading="lazy">
+      </a>
+      <div class="wtext">
+        <p class="kicker" style="margin:0 0 6px">Live website</p>
+        <h3>GearClarity Tech</h3>
+        <p>An independent tech-education website with buying guides, gear recommendations, and how-to articles.</p>
+        <ul class="inc"><li>Multi-page site with consistent navigation</li><li>Mobile-friendly layout</li><li>Guides, product recommendations, and a contact page</li></ul>
+        <a class="btn primary" href="https://gearclaritytech.com" target="_blank" rel="noopener">Visit the live site &rarr;</a>
       </div>
     </div>
   </div>
@@ -297,7 +351,7 @@ footer .tag{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-trans
       <p>Tell us a little about your business and what you need. You'll get a reply with questions or a written quote.</p>
       <ul class="cinfo">
         <li><span class="ic"><svg><use href="#i-user"/></svg></span>Donavon Vicars, founder</li>
-        <li><span class="ic"><svg><use href="#i-phone"/></svg></span><a href="tel:+19083910362">908-391-0362</a></li>
+        <li><span class="ic"><svg><use href="#i-phone"/></svg></span><span><a href="tel:+19083910362">Call 908-391-0362</a> · <a href="sms:+19083910362">Text</a></span></li>
         <li><span class="ic"><svg><use href="#i-mail"/></svg></span><a href="mailto:hello@creatorindependencestudio.com">hello@creatorindependencestudio.com</a></li>
         <li><span class="ic"><svg><use href="#i-pin"/></svg></span>Central New Jersey &amp; remote</li>
       </ul>
@@ -327,6 +381,12 @@ footer .tag{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-trans
 </section>
 
 </main>
+
+<div class="mbar" role="navigation" aria-label="Quick contact">
+  <a href="tel:+19083910362"><svg viewBox="0 0 24 24"><use href="#i-phone"/></svg>Call</a>
+  <a href="sms:+19083910362"><svg viewBox="0 0 24 24"><use href="#i-chat"/></svg>Text</a>
+  <a class="q" href="#contact">Free quote</a>
+</div>
 
 <footer>
   <div class="wrap">
