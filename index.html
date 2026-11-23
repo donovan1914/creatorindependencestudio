@@ -11,136 +11,327 @@
 <meta property="og:title" content="Creator Independence Studio | Websites &amp; Online Storefronts for Artists and Small Businesses">
 <meta property="og:description" content="Websites, artist portfolios, and online storefronts for independent artists, vendors, and small businesses. Starting at $149. Central New Jersey and remote.">
 <meta property="og:url" content="https://creatorindependencestudio.com/">
-<meta name="twitter:card" content="summary">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23b5562f'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' fill='white' text-anchor='middle'%3ECI%3C/text%3E%3C/svg%3E">
+<meta property="og:image" content="https://creatorindependencestudio.com/images/hero-booth.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23f6efe4' stroke='%23b8582d' stroke-width='3'/%3E%3Cpath d='M32 50V18M32 26c-6-2-9-6-10-10 6 0 9 4 10 10zm0 0c6-2 9-6 10-10-6 0-9 4-10 10zm0 10c-6-2-10-6-11-11 6 0 10 5 11 11zm0 0c6-2 10-6 11-11-6 0-10 5-11 11z' fill='none' stroke='%23b8582d' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"Creator Independence Studio","url":"https://creatorindependencestudio.com/","email":"hello@creatorindependencestudio.com","telephone":"+1-908-391-0362","founder":{"@type":"Person","name":"Donavon Vicars"},"areaServed":["Central New Jersey","Remote"],"description":"Websites, artist portfolios, and online storefronts for independent artists, vendors, and small businesses."}
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Creator Independence Studio","url":"https://creatorindependencestudio.com/","image":"https://creatorindependencestudio.com/images/hero-booth.jpg","email":"hello@creatorindependencestudio.com","telephone":"+1-908-391-0362","founder":{"@type":"Person","name":"Donavon Vicars"},"areaServed":["Central New Jersey","Remote"],"description":"Websites, artist portfolios, and online storefronts for independent artists, vendors, and small businesses."}
 </script>
 <style>
-:root{--ink:#262321;--muted:#6a625b;--accent:#b5562f;--accent2:#c66a3f;--bg:#fbf6ef;--line:#eaded0;--warm:#f5ebdf}
+:root{--ink:#2a2623;--muted:#6b625a;--rust:#b8582d;--rust-dk:#9a4522;--cream:#f6efe4;--cream2:#efe4d4;--line:#e3d4c1;--white:#fffdf9;--sage:#7d8c6a}
 *{box-sizing:border-box}
-body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
-a{color:var(--accent)}
-header{background:#2b2724;color:#fff;padding:18px 22px}
-.bar{max-width:1080px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
-.brand{font-weight:800;font-size:1.25rem;letter-spacing:.2px}
-.brand small{display:block;font-weight:400;opacity:.8;font-size:.85rem}
-header nav a{color:#fff;text-decoration:none;margin-left:16px;opacity:.9}
-header nav a:hover{text-decoration:underline;opacity:1}
-.wrap{max-width:1080px;margin:auto;padding:40px 22px 70px}
-.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-weight:800;color:var(--accent2);font-size:.78rem}
-h1{font-size:clamp(2rem,5vw,3.6rem);line-height:1.06;margin:.3rem 0 1rem}
-h2{font-size:clamp(1.4rem,3vw,2rem);margin-top:2.8rem;line-height:1.2}
-h3{margin:0 0 .4rem;font-size:1.15rem}
-.lead{font-size:1.18rem;color:#4a433d;max-width:760px}
-.btn{display:inline-block;text-decoration:none;font-weight:800;border-radius:10px;padding:13px 18px;border:2px solid var(--accent);font-size:1rem;cursor:pointer;font-family:inherit}
-.btn.primary{background:var(--accent);color:#fff}
-.btn.secondary{background:#fff;color:var(--accent)}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0}
-.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 10px 30px rgba(60,40,20,.06)}
-.price{font-weight:800;color:var(--accent);font-size:1.1rem;margin:.2rem 0 .6rem}
-.muted{color:var(--muted);font-size:.9rem}
-ol.steps{padding-left:1.2rem}
-ol.steps li{margin:.5rem 0}
-.contact{background:var(--warm);border:1px solid var(--line);border-radius:16px;padding:26px;margin-top:40px}
-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;font-size:17px}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--rust)}
+.display{font-family:"Barlow Condensed","Arial Narrow",Impact,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.01em;line-height:.98}
+.wrap{max-width:1160px;margin:auto;padding:0 24px}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(246,239,228,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 24px;max-width:1160px;margin:auto}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.logo svg{width:40px;height:40px;flex:none}
+.logo b{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.3rem;letter-spacing:.04em;text-transform:uppercase;line-height:1}
+.logo small{display:block;font-size:.72rem;color:var(--muted);letter-spacing:.02em}
+nav a{color:var(--ink);text-decoration:none;margin-left:22px;font-weight:600;font-size:.95rem}
+nav a:hover{color:var(--rust)}
+nav a.navcta{background:var(--rust);color:#fff;padding:9px 16px;border-radius:999px;white-space:nowrap}
+nav a.navcta:hover{background:var(--rust-dk);color:#fff}
+
+/* buttons */
+.btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:999px;padding:14px 24px;border:2px solid var(--rust);font-size:1rem;cursor:pointer;font-family:inherit;transition:.15s}
+.btn.primary{background:var(--rust);color:#fff}
+.btn.primary:hover{background:var(--rust-dk);border-color:var(--rust-dk)}
+.btn.secondary{background:transparent;color:var(--rust)}
+.btn.secondary:hover{background:var(--white)}
+
+/* hero */
+.hero{padding:56px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:.95fr 1.15fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(3rem,6.4vw,5.4rem);margin:0 0 18px}
+.kicker{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;color:var(--rust);font-size:1.25rem;letter-spacing:.03em;line-height:1.2;margin:0 0 16px}
+.lead{font-size:1.12rem;color:#4b443d;max-width:520px;margin:0 0 26px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.hero-img{border-radius:28px;overflow:hidden;box-shadow:0 30px 60px -20px rgba(80,50,25,.35)}
+.hero-img img{width:100%;object-fit:cover;aspect-ratio:1800/1184}
+.trust{margin-top:22px;font-size:.92rem;color:var(--muted)}
+.trust a{font-weight:600}
+
+/* ornament */
+.orn{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--rust);margin:0 auto 14px}
+.orn:before,.orn:after{content:"";height:1px;width:56px;background:var(--rust);opacity:.55}
+.orn svg{width:30px;height:16px}
+
+section{padding:76px 0}
+.center{text-align:center}
+h2.display{font-size:clamp(2.3rem,4.6vw,3.6rem);margin:0 0 14px}
+.sub{color:var(--muted);max-width:640px;margin:0 auto 40px;font-size:1.05rem}
+
+/* connection */
+.conn{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.conn .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.conn-img{border-radius:24px;overflow:hidden}
+.conn-img img{width:100%;aspect-ratio:1400/1158;object-fit:cover}
+.benefits{list-style:none;padding:0;margin:26px 0 0}
+.benefits li{display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);font-weight:600;font-size:1.08rem}
+.benefits li:last-child{border-bottom:0}
+.ic{flex:none;width:56px;height:56px;border-radius:50%;background:var(--rust);display:grid;place-items:center}
+.ic svg{width:28px;height:28px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ic.o{background:transparent;border:1.6px solid var(--rust)}
+.ic.o svg{stroke:var(--rust)}
+
+/* services */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:28px;transition:.2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 18px 40px -18px rgba(80,50,25,.3)}
+.card h3{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;font-size:1.45rem;letter-spacing:.02em;margin:16px 0 6px;line-height:1.1}
+.card p{margin:0;color:#544c45;font-size:.98rem}
+
+/* pricing */
+.pricing{background:var(--cream2)}
+.price-wrap{display:grid;grid-template-columns:1.25fr .9fr;gap:48px;align-items:center}
+.plist{background:var(--white);border:1px solid var(--line);border-radius:24px;padding:10px 30px}
+.prow{display:grid;grid-template-columns:56px 1fr auto;gap:18px;align-items:center;padding:20px 0;border-bottom:1px solid var(--line)}
+.prow:last-child{border-bottom:0}
+.prow h3{margin:0;font-size:1.12rem;font-weight:700;line-height:1.25}
+.prow p{margin:2px 0 0;font-size:.9rem;color:var(--muted)}
+.pr{text-align:right;color:var(--rust);line-height:1}
+.pr small{display:block;font-size:.75rem;font-weight:600;color:var(--rust);margin-bottom:3px}
+.pr b{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:2.2rem}
+.pr i{font-style:normal;font-size:.95rem;font-weight:600}
+.fine{font-size:.85rem;color:var(--muted);margin-top:16px}
+.side-img{border-radius:24px;overflow:hidden;box-shadow:0 24px 50px -24px rgba(80,50,25,.35)}
+.side-img img{width:100%;aspect-ratio:1000/952;object-fit:cover}
+.portfolio{margin-top:18px;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:16px 18px;font-size:.95rem}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
+.step{position:relative;padding:28px 22px 22px;background:var(--white);border:1px solid var(--line);border-radius:20px}
+.step:before{counter-increment:s;content:counter(s);position:absolute;top:-18px;left:22px;width:38px;height:38px;border-radius:50%;background:var(--rust);color:#fff;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.3rem;display:grid;place-items:center}
+.step h3{margin:6px 0 6px;font-size:1.05rem}
+.step p{margin:0;font-size:.95rem;color:#544c45}
+
+/* contact */
+.contact{background:var(--ink);color:#f3e9dc}
+.contact .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.contact h2{color:#fff}
+.contact .kicker{color:#e59a6f}
+.contact p{color:#e6dccf}
+.contact a{color:#f2b38c}
+.cinfo{list-style:none;padding:0;margin:26px 0}
+.cinfo li{display:flex;align-items:center;gap:14px;margin:12px 0;font-weight:600}
+.cinfo .ic{width:44px;height:44px}
+.cinfo .ic svg{width:22px;height:22px}
+form{background:var(--white);color:var(--ink);border-radius:24px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
 form .full{grid-column:1/-1}
-label{display:block;font-weight:700;font-size:.92rem;margin-bottom:4px}
-input,select,textarea{width:100%;padding:11px 12px;border:1px solid #d9c9b7;border-radius:10px;font:inherit;background:#fff;color:var(--ink)}
+label{display:block;font-weight:600;font-size:.88rem;margin-bottom:5px}
+input,select,textarea{width:100%;padding:12px 14px;border:1px solid #d9c9b7;border-radius:12px;font:inherit;font-size:.98rem;background:#fff;color:var(--ink)}
 textarea{min-height:130px;resize:vertical}
-input:focus,select:focus,textarea:focus{outline:2px solid var(--accent2);outline-offset:1px}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--rust);outline-offset:1px;border-color:transparent}
 .hp{position:absolute;left:-5000px}
-footer{background:#2b2724;color:#e9dfd3;padding:28px 22px;font-size:.9rem}
-footer a{color:#f3c9a8}
-footer .inner{max-width:1080px;margin:auto}
-@media(max-width:850px){.grid3{grid-template-columns:1fr} form{grid-template-columns:1fr} header nav a{margin:0 14px 0 0}}
+form .btn{width:100%}
+.contact form .note{font-size:.82rem;color:var(--muted);margin:0}
+
+footer{background:#1f1c1a;color:#cfc3b5;padding:30px 0;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+footer a{color:#f2b38c}
+footer .tag{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#fff;font-size:1.1rem}
+
+@media(max-width:920px){
+ .hero .wrap,.conn .wrap,.price-wrap,.contact .wrap{grid-template-columns:1fr;gap:34px}
+ .hero{padding:34px 0 48px}
+ .grid3{grid-template-columns:1fr 1fr}
+ .steps{grid-template-columns:1fr 1fr;row-gap:34px}
+ nav a:not(.navcta){display:none}
+ .side-img{max-width:520px}
+}
+@media(max-width:600px){
+ body{font-size:16px}
+ section{padding:58px 0}
+ .grid3,.steps{grid-template-columns:1fr}
+ form{grid-template-columns:1fr;padding:22px}
+ .plist{padding:4px 18px}
+ .prow{grid-template-columns:44px 1fr;gap:12px}
+ .prow .ic{width:44px;height:44px}
+ .prow .ic svg{width:22px;height:22px}
+ .pr{grid-column:2;text-align:left;margin-top:-6px}
+ .pr small{display:inline;margin-right:6px}
+ .pr b{font-size:1.8rem}
+ .logo small{display:none}
+ .logo b{font-size:1.1rem}
+ nav a.navcta{padding:8px 14px;font-size:.88rem;margin-left:0}
+ .bar{padding:10px 18px}
+ .wrap{padding:0 18px}
+}
 </style>
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-sprig" viewBox="0 0 40 40"><path d="M20 36V8M20 15c-5-1.5-7.5-5-8-9 5 0 7.5 3.5 8 9zm0 0c5-1.5 7.5-5 8-9-5 0-7.5 3.5-8 9zm0 9c-5.5-1.5-8.5-5.5-9-10 5.5 0 8.5 4.5 9 10zm0 0c5.5-1.5 8.5-5.5 9-10-5.5 0-8.5 4.5-9 10z"/></symbol>
+ <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="11" r="2"/><path d="M5.5 16c.6-1.6 1.7-2.4 3-2.4s2.4.8 3 2.4M14 10h4M14 13h4"/></symbol>
+ <symbol id="i-site" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4M6.5 8h11M6.5 11h6"/></symbol>
+ <symbol id="i-art" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 16l5-5 4 4 3-3 6 6"/><circle cx="15.5" cy="8.5" r="1.5"/></symbol>
+ <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2.5l2.2 11h10.6L20.5 7H7"/><circle cx="9.5" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></symbol>
+ <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></symbol>
+ <symbol id="i-catalog" viewBox="0 0 24 24"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H11v16H5.5C4.7 20 4 19.3 4 18.5zM20 5.5c0-.8-.7-1.5-1.5-1.5H13v16h5.5c.8 0 1.5-.7 1.5-1.5z"/><path d="M6.5 8h2.5M6.5 11h2.5M15 8h2.5M15 11h2.5"/></symbol>
+ <symbol id="i-qr" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="6" height="6" rx="1"/><rect x="14.5" y="3.5" width="6" height="6" rx="1"/><rect x="3.5" y="14.5" width="6" height="6" rx="1"/><path d="M14.5 14.5h2.5v2.5M20.5 14.5v2M14.5 20.5h2M18.5 18.5h2v2"/></symbol>
+ <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16"/><path d="M7.5 15l4-4 3 3 5-6"/><path d="M16 8h3.5v3.5"/></symbol>
+ <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5.5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="18.5" r="2.5"/><path d="M8.2 10.8l7.6-4M8.2 13.2l7.6 4"/></symbol>
+ <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 20c1.2-3.8 4-5.8 7.5-5.8s6.3 2 7.5 5.8"/></symbol>
+ <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6.5a3 3 0 016 0V8"/></symbol>
+ <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a1.5 1.5 0 01-1.6 1.5A16.5 16.5 0 013.5 5.6 1.5 1.5 0 015 4z"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></symbol>
+ <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6-6.5-11A6.5 6.5 0 0112 3.5 6.5 6.5 0 0118.5 10c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+</svg>
+
 <header>
   <div class="bar">
-    <div class="brand">Creator Independence Studio<small>Your Business. Your Creativity. Your Future.</small></div>
-    <nav><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#how">How it works</a><a href="#contact">Contact</a></nav>
+    <a class="logo" href="#top" aria-label="Creator Independence Studio home">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22.5" fill="none" stroke="#b8582d" stroke-width="1.6"/><g transform="translate(4 4)" fill="none" stroke="#b8582d" stroke-width="1.6" stroke-linecap="round"><use href="#i-sprig" width="40" height="40"/></g></svg>
+      <span><b>Creator Independence</b><small>Your Business. Your Creativity. Your Future.</small></span>
+    </a>
+    <nav><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#how">How it works</a><a class="navcta" href="#contact">Free quote</a></nav>
   </div>
 </header>
 
-<main class="wrap">
+<main id="top">
 
-<p class="eyebrow">From the market to the internet</p>
-<h1>Your creativity deserves to be seen every day.</h1>
-<p class="lead">Your creativity brings people to your booth. A website gives them another way to find you, connect with you, and shop throughout the year. Creator Independence Studio builds simple, professional websites and storefronts that you own.</p>
-<div class="cta-row">
-  <a class="btn primary" href="#contact">Request a free quote</a>
-  <a class="btn secondary" href="#pricing">See prices</a>
-</div>
-<p class="muted">Serving Central New Jersey in person and clients anywhere remotely · Call or text <a href="tel:+19083910362">908-391-0362</a></p>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1 class="display">Your creativity deserves to be seen every day.</h1>
+      <p class="kicker">From the market to the internet — let your business grow beyond the booth.</p>
+      <p class="lead">Your creativity brings people to your booth. A website gives them another way to find you, connect with you, and shop throughout the year. We build simple, beautiful websites and storefronts that you own.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#contact">Request a free quote</a>
+        <a class="btn secondary" href="#pricing">See prices</a>
+      </div>
+      <p class="trust">Central New Jersey in person &amp; clients anywhere remotely · Call or text <a href="tel:+19083910362">908-391-0362</a></p>
+    </div>
+    <div class="hero-img"><img src="images/hero-booth.jpg" width="1800" height="1184" alt="Handmade ceramics, jewelry, and a woven wall hanging at a market booth beside a phone showing an online gallery of the same products" fetchpriority="high"></div>
+  </div>
+</section>
 
-<h2 id="services">What we build</h2>
-<div class="grid3">
-  <div class="card"><h3>Websites</h3><p>A clean, mobile-friendly site that explains who you are, shows your work, and makes it easy to get in touch.</p></div>
-  <div class="card"><h3>Online storefronts</h3><p>A shop for your products or art, set up on a platform you control, with clear product pages and checkout.</p></div>
-  <div class="card"><h3>Product catalogs</h3><p>An organized catalog of what you sell, ready to share with customers, wholesale buyers, or event organizers.</p></div>
-  <div class="card"><h3>Website maintenance</h3><p>Updates, new pages, product changes, and checkups so your site stays current without you learning the technical side.</p></div>
-  <div class="card"><h3>Business-development support</h3><p>Practical help with your offer, your contact process, and the next steps that turn visitors into customers.</p></div>
-  <div class="card"><h3>QR codes &amp; digital business cards</h3><p>Make it easy for customers at your booth to find you again later, with a scan instead of a lost paper card.</p></div>
-</div>
+<section class="conn">
+  <div class="wrap">
+    <div class="conn-img"><img src="images/ceramics-phone.jpg" width="1400" height="1158" alt="Speckled pottery and handmade jewelry next to a phone showing an online shop" loading="lazy"></div>
+    <div>
+      <p class="kicker">Your work, beyond market day</p>
+      <h2 class="display">Keep the connection going</h2>
+      <p>Customers who love your work shouldn't lose you when the event ends. A website keeps you discoverable after the market closes, makes it easy for customers to come back, and keeps ownership of your work and online presence in your hands.</p>
+      <ul class="benefits">
+        <li><span class="ic"><svg><use href="#i-share"/></svg></span>Share your portfolio</li>
+        <li><span class="ic"><svg><use href="#i-user"/></svg></span>Help customers find you again</li>
+        <li><span class="ic"><svg><use href="#i-bag"/></svg></span>Sell beyond market day</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-<h2 id="pricing">Simple ways to grow your online presence</h2>
-<div class="grid3">
-  <div class="card"><h3>Digital business card / landing page</h3><p class="price">Starting at $149</p><p>One clean page with who you are, what you offer, your links, and how to reach you. Pairs well with a QR code at your booth.</p></div>
-  <div class="card"><h3>Starter business website</h3><p class="price">Starting at $299</p><p>A mobile-friendly site that explains your business, shows your work, and makes it easy to contact you.</p></div>
-  <div class="card"><h3>Artist portfolio website</h3><p class="price">Starting at $399</p><p>A gallery-focused site that presents your art or products the way you want them seen.</p></div>
-  <div class="card"><h3>Online storefront</h3><p class="price">Starting at $599</p><p>A shop with product pages and checkout so customers can buy after the market closes.</p></div>
-  <div class="card"><h3>Website maintenance</h3><p class="price">From $39/month</p><p>Updates, product changes, and regular checkups so your site stays current.</p></div>
-</div>
-<p class="muted">Introductory prices are estimates; your final quote depends on scope and is agreed in writing before work begins. Domain, hosting, payment processing, and other third-party fees are separate and paid directly to those providers, so the accounts stay in your name.</p>
+<section id="services">
+  <div class="wrap center">
+    <div class="orn"><svg viewBox="0 0 40 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 10h32M20 10c-3-3-7-4-10-3 2 3 6 4 10 3zm0 0c3-3 7-4 10-3-2 3-6 4-10 3z"/></svg></div>
+    <h2 class="display">What we can build</h2>
+    <p class="sub">Mobile-friendly websites that look beautiful and work smoothly for your visitors — set up on platforms you control.</p>
+    <div class="grid3" style="text-align:left">
+      <div class="card"><span class="ic o"><svg><use href="#i-site"/></svg></span><h3>Websites</h3><p>A clean site that explains who you are, shows your work, and makes it easy to get in touch.</p></div>
+      <div class="card"><span class="ic o"><svg><use href="#i-art"/></svg></span><h3>Artist galleries</h3><p>Showcase your work with elegant galleries that highlight what you create.</p></div>
+      <div class="card"><span class="ic o"><svg><use href="#i-cart"/></svg></span><h3>Online storefronts</h3><p>Sell your products online with easy-to-use stores and clear product pages built for small creators.</p></div>
+      <div class="card"><span class="ic o"><svg><use href="#i-catalog"/></svg></span><h3>Product catalogs</h3><p>An organized catalog of what you sell, ready for customers, wholesale buyers, or event organizers.</p></div>
+      <div class="card"><span class="ic o"><svg><use href="#i-qr"/></svg></span><h3>QR codes &amp; digital cards</h3><p>Let customers at your booth find you again later with a quick scan instead of a lost paper card.</p></div>
+      <div class="card"><span class="ic o"><svg><use href="#i-chart"/></svg></span><h3>Support &amp; growth</h3><p>Maintenance, updates, and practical business-development help so your site keeps working for you.</p></div>
+    </div>
+  </div>
+</section>
 
-<p>Portfolio example: <a href="https://gearclaritytech.com" target="_blank" rel="noopener">gearclaritytech.com</a>, an independent tech-education website built and run by founder Donavon Vicars.</p>
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="center">
+      <div class="orn"><svg viewBox="0 0 40 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 10h32M20 10c-3-3-7-4-10-3 2 3 6 4 10 3zm0 0c3-3 7-4 10-3-2 3-6 4-10 3z"/></svg></div>
+      <h2 class="display">Simple ways to grow your online presence</h2>
+      <p class="sub">Straightforward starting prices. Your written quote is agreed before any work begins.</p>
+    </div>
+    <div class="price-wrap">
+      <div>
+        <div class="plist">
+          <div class="prow"><span class="ic o"><svg><use href="#i-card"/></svg></span><div><h3>Digital business card / landing page</h3><p>One clean page with your links — perfect with a booth QR code.</p></div><div class="pr"><small>Starting at</small><b>$149</b></div></div>
+          <div class="prow"><span class="ic o"><svg><use href="#i-site"/></svg></span><div><h3>Starter business website</h3><p>Explains your business, shows your work, easy to contact.</p></div><div class="pr"><small>Starting at</small><b>$299</b></div></div>
+          <div class="prow"><span class="ic o"><svg><use href="#i-art"/></svg></span><div><h3>Artist portfolio website</h3><p>A gallery-focused site for your art or products.</p></div><div class="pr"><small>Starting at</small><b>$399</b></div></div>
+          <div class="prow"><span class="ic o"><svg><use href="#i-cart"/></svg></span><div><h3>Online storefront</h3><p>Product pages and checkout so customers can buy anytime.</p></div><div class="pr"><small>Starting at</small><b>$599</b></div></div>
+          <div class="prow"><span class="ic o"><svg><use href="#i-gear"/></svg></span><div><h3>Website maintenance</h3><p>Updates, product changes, and regular checkups.</p></div><div class="pr"><small>From</small><b>$39</b><i>/month</i></div></div>
+        </div>
+        <p class="fine">Introductory prices are estimates; your final quote depends on scope and is agreed in writing before work begins. Domain, hosting, payment processing, and other third-party fees are separate and paid directly to those providers, so the accounts stay in your name.</p>
+      </div>
+      <div>
+        <div class="side-img"><img src="images/handmade-studio.jpg" width="1000" height="952" alt="Pottery, twine, and paintbrushes beside a phone showing a Handmade with Heart website" loading="lazy"></div>
+        <div class="portfolio"><strong>See my work:</strong> <a href="https://gearclaritytech.com" target="_blank" rel="noopener">gearclaritytech.com</a>, an independent tech-education website built and run by founder Donavon Vicars.</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<h2 id="how">How it works</h2>
-<ol class="steps">
-  <li><strong>Tell us about your project.</strong> What you sell or create, who your customers are, and what you want the site to do.</li>
-  <li><strong>Get a written quote.</strong> Scope, price, and timeline, agreed before any work starts.</li>
-  <li><strong>Review and refine.</strong> You see the site before it goes live and request changes.</li>
-  <li><strong>Launch and keep growing.</strong> We publish the site, show you how to update the basics, and stay available for maintenance.</li>
-</ol>
+<section id="how">
+  <div class="wrap center">
+    <div class="orn"><svg viewBox="0 0 40 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 10h32M20 10c-3-3-7-4-10-3 2 3 6 4 10 3zm0 0c3-3 7-4 10-3-2 3-6 4-10 3z"/></svg></div>
+    <h2 class="display">How it works</h2>
+    <p class="sub">A simple, friendly process — no tech background needed.</p>
+    <div class="steps" style="text-align:left">
+      <div class="step"><h3>Tell us about your project</h3><p>What you sell or create, who your customers are, and what you want the site to do.</p></div>
+      <div class="step"><h3>Get a written quote</h3><p>Scope, price, and timeline, agreed before any work starts.</p></div>
+      <div class="step"><h3>Review and refine</h3><p>You see the site before it goes live and request changes.</p></div>
+      <div class="step"><h3>Launch and keep growing</h3><p>We publish, show you how to update the basics, and stay available for maintenance.</p></div>
+    </div>
+  </div>
+</section>
 
 <section class="contact" id="contact">
-  <h2 style="margin-top:0">Request a free quote</h2>
-  <p>Tell us a little about your business and what you need. You'll get a reply with questions or a written quote.</p>
-  <form action="https://formsubmit.co/hello@creatorindependencestudio.com" method="POST">
-    <input type="hidden" name="_subject" value="New quote request: Creator Independence Studio">
-    <input type="hidden" name="_next" value="https://creatorindependencestudio.com/thanks.html">
-    <input type="hidden" name="_template" value="table">
-    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-    <div><label for="name">Your name</label><input id="name" name="name" type="text" required autocomplete="name"></div>
-    <div><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email"></div>
-    <div><label for="business">Business or art</label><input id="business" name="business" type="text"></div>
-    <div><label for="service">What you need</label>
-      <select id="service" name="service">
-        <option>Not sure yet</option>
-        <option>Digital business card / landing page</option>
-        <option>Starter business website</option>
-        <option>Artist portfolio website</option>
-        <option>Online storefront</option>
-        <option>Website maintenance</option>
-      </select></div>
-    <div class="full"><label for="message">Tell us about your project</label><textarea id="message" name="message" required placeholder="What you sell or create, any website you have now, your timeline, and budget range."></textarea></div>
-    <div class="full"><button class="btn primary" type="submit">Send my quote request</button></div>
-  </form>
-  <p>Or email <a href="mailto:hello@creatorindependencestudio.com">hello@creatorindependencestudio.com</a>, or call or text <a href="tel:+19083910362">908-391-0362</a>.</p>
-  <p class="muted">Please don't send passwords or payment details through this form.</p>
+  <div class="wrap">
+    <div>
+      <p class="kicker">Let's talk about getting your business online</p>
+      <h2 class="display">Let's build something that works for you.</h2>
+      <p>Tell us a little about your business and what you need. You'll get a reply with questions or a written quote.</p>
+      <ul class="cinfo">
+        <li><span class="ic"><svg><use href="#i-user"/></svg></span>Donavon Vicars, founder</li>
+        <li><span class="ic"><svg><use href="#i-phone"/></svg></span><a href="tel:+19083910362">908-391-0362</a></li>
+        <li><span class="ic"><svg><use href="#i-mail"/></svg></span><a href="mailto:hello@creatorindependencestudio.com">hello@creatorindependencestudio.com</a></li>
+        <li><span class="ic"><svg><use href="#i-pin"/></svg></span>Central New Jersey &amp; remote</li>
+      </ul>
+    </div>
+    <form action="https://formsubmit.co/hello@creatorindependencestudio.com" method="POST">
+      <input type="hidden" name="_subject" value="New quote request: Creator Independence Studio">
+      <input type="hidden" name="_next" value="https://creatorindependencestudio.com/thanks.html">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div><label for="name">Your name</label><input id="name" name="name" type="text" required autocomplete="name"></div>
+      <div><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+      <div><label for="business">Business or art</label><input id="business" name="business" type="text"></div>
+      <div><label for="service">What you need</label>
+        <select id="service" name="service">
+          <option>Not sure yet</option>
+          <option>Digital business card / landing page</option>
+          <option>Starter business website</option>
+          <option>Artist portfolio website</option>
+          <option>Online storefront</option>
+          <option>Website maintenance</option>
+        </select></div>
+      <div class="full"><label for="message">Tell us about your project</label><textarea id="message" name="message" required placeholder="What you sell or create, any website you have now, your timeline, and budget range."></textarea></div>
+      <div class="full"><button class="btn primary" type="submit">Send my quote request</button></div>
+      <p class="note full">Please don't send passwords or payment details through this form.</p>
+    </form>
+  </div>
 </section>
 
 </main>
 
 <footer>
-  <div class="inner">
-    <strong>Creator Independence Studio</strong> · Websites and online storefronts for independent artists, vendors, and small businesses · Central New Jersey &amp; remote<br>
-    <a href="mailto:hello@creatorindependencestudio.com">hello@creatorindependencestudio.com</a> · <a href="tel:+19083910362">908-391-0362</a><br>
-    <span style="opacity:.75">© 2026 Creator Independence Studio</span>
+  <div class="wrap">
+    <div><span class="tag">Creator Independence Studio</span><br>Websites · Storefronts · Digital Support</div>
+    <div><a href="mailto:hello@creatorindependencestudio.com">hello@creatorindependencestudio.com</a> · <a href="tel:+19083910362">908-391-0362</a><br><span style="opacity:.7">© 2026 Creator Independence Studio</span></div>
   </div>
 </footer>
 
